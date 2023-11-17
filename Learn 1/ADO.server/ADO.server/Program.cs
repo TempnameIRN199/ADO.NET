@@ -10,11 +10,137 @@ namespace ADO.server
 {
     internal class Program
     {
+        SqlConnection conn = null;
 
-        public static string connStr;
+        public Program()
+        {
+            conn = new SqlConnection();
+            conn.ConnectionString = @"Data Source=DESKTOP-RACOKG7;Initial Catalog=Library;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        }
+
         static void Main(string[] args)
         {
-            connStr = ConfigurationManager.ConnectionStrings["kuma"].ConnectionString;
+            Program pr = new Program();
+            pr.ReadDataClients();
+            pr.ReadDataBooks();
+            pr.ReadDataAuthors();
+        }
+
+        public void ReadDataClients()
+        {
+            SqlDataReader rdr = null;
+            try
+            {
+                conn.Open();
+                Console.WriteLine("Clients:");
+                SqlCommand cmd = new SqlCommand("select * from Clients", conn);
+                rdr = cmd.ExecuteReader();
+                int line = 0;
+                while (rdr.Read())
+                {
+                    if (line == 0)
+                    {
+                        for (int i = 0; i < rdr.FieldCount; i++)
+                        {
+                            Console.Write(rdr.GetName(i).ToString() + "\t");
+                        }
+                    }
+                    Console.WriteLine();
+                    line++;
+                    Console.WriteLine(rdr[0] + "\t" + rdr[1] + "\t" + rdr[2]);
+                }
+                Console.WriteLine($"Обработано записей {line.ToString()}");
+            }
+            finally
+            {
+                if (rdr != null)
+                {
+                    rdr.Close();
+                }
+                if (conn != null)
+                {
+                    conn.Close();
+                    Console.ReadKey();
+                }
+            }
+        }
+
+        public void ReadDataBooks()
+        {
+            SqlDataReader rdr = null;
+            try
+            {
+                conn.Open();
+                Console.WriteLine("Books:");
+                SqlCommand cmd = new SqlCommand("select * from Books", conn);
+                rdr = cmd.ExecuteReader();
+                int line = 0;
+                while (rdr.Read())
+                {
+                    if (line == 0)
+                    {
+                        for (int i = 0; i < rdr.FieldCount; i++)
+                        {
+                            Console.Write(rdr.GetName(i).ToString() + "\t");
+                        }
+                    }
+                    Console.WriteLine();
+                    line++;
+                    Console.WriteLine(rdr[0] + "\t" + rdr[1] + "\t" + rdr[2]);
+                }
+                Console.WriteLine($"Обработано записей {line.ToString()}");
+            }
+            finally
+            {
+                if (rdr != null)
+                {
+                    rdr.Close();
+                }
+                if (conn != null)
+                {
+                    conn.Close();
+                    Console.ReadKey();
+                }
+            }
+        }
+
+        public void ReadDataAuthors()
+        {
+            SqlDataReader rdr = null;
+            try
+            {
+                conn.Open();
+                Console.WriteLine("Authors:");
+                SqlCommand cmd = new SqlCommand("select * from Authors", conn);
+                rdr = cmd.ExecuteReader();
+                int line = 0;
+                while (rdr.Read())
+                {
+                    if (line == 0)
+                    {
+                        for (int i = 0; i < rdr.FieldCount; i++)
+                        {
+                            Console.Write(rdr.GetName(i).ToString() + "\t");
+                        }
+                    }
+                    Console.WriteLine();
+                    line++;
+                    Console.WriteLine(rdr[0] + "\t" + rdr[1]);
+                }
+                Console.WriteLine($"Обработано записей {line.ToString()}");
+            }
+            finally
+            {
+                if (rdr != null)
+                {
+                    rdr.Close();
+                }
+                if (conn != null)
+                {
+                    conn.Close();
+                    Console.ReadKey();
+                }
+            }
         }
     }
 }
