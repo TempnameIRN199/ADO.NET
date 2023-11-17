@@ -1,0 +1,7 @@
+E:\Project VS\C#\ADO.NET\ADO.server\ADO.server\bin\Debug\ADO.server.exe.config
+E:\Project VS\C#\ADO.NET\ADO.server\ADO.server\bin\Debug\ADO.server.exe
+E:\Project VS\C#\ADO.NET\ADO.server\ADO.server\bin\Debug\ADO.server.pdb
+E:\Project VS\C#\ADO.NET\ADO.server\ADO.server\obj\Debug\ADO.server.csproj.AssemblyReference.cache
+E:\Project VS\C#\ADO.NET\ADO.server\ADO.server\obj\Debug\ADO.server.csproj.CoreCompileInputs.cache
+E:\Project VS\C#\ADO.NET\ADO.server\ADO.server\obj\Debug\ADO.server.exe
+E:\Project VS\C#\ADO.NET\ADO.server\ADO.server\obj\Debug\ADO.server.pdb
