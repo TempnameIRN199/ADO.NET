@@ -1,0 +1,7 @@
+E:\Learn\ADO.Net\ADO.NET\Learn 2\lab 2\lab 2\bin\Debug\lab 2.exe.config
+E:\Learn\ADO.Net\ADO.NET\Learn 2\lab 2\lab 2\bin\Debug\lab 2.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 2\lab 2\lab 2\bin\Debug\lab 2.pdb
+E:\Learn\ADO.Net\ADO.NET\Learn 2\lab 2\lab 2\obj\Debug\lab 2.csproj.AssemblyReference.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 2\lab 2\lab 2\obj\Debug\lab 2.csproj.CoreCompileInputs.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 2\lab 2\lab 2\obj\Debug\lab 2.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 2\lab 2\lab 2\obj\Debug\lab 2.pdb
