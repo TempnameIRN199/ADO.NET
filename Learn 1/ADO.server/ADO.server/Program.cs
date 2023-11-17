@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration; // for ConfigurationManager
+using System.Xml.Linq;
 
 namespace ADO.server
 {
@@ -144,3 +145,28 @@ namespace ADO.server
         }
     }
 }
+
+//create database Library
+//use Library
+
+//create table Clients (
+//Id int not null identity primary key,
+//[Name] nvarchar(max) not null check([Name]!= ''),
+//IsBooks bit not null default(0)
+//)
+
+//create table Books (
+//Id int not null identity primary key,
+//[Name] nvarchar(max) not null check([Name]!= ''),
+//ClientId int null foreign key references Clients(Id)
+//)
+
+//create table Authors (
+//Id int not null identity primary key,
+//[Name] nvarchar(max) not null check([Name]!= '')
+//)
+
+//create table Book_Author (
+//BookId int not null foreign key references Books(Id),
+//AuthorId int not null foreign key references Authors(Id)
+//)
