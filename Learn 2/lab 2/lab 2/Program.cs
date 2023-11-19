@@ -304,6 +304,8 @@ namespace lab_2
             Console.WriteLine($"Количество книг, которые взял посетитель с id {visitorId} в этом году: {count}");
             conn.Close();
         }
+
+        // 
     }
 }
 

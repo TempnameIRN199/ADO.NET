@@ -1,0 +1,7 @@
+E:\Learn\ADO.Net\ADO.NET\Learn 2\hw2\hw2\bin\Debug\hw2.exe.config
+E:\Learn\ADO.Net\ADO.NET\Learn 2\hw2\hw2\bin\Debug\hw2.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 2\hw2\hw2\bin\Debug\hw2.pdb
+E:\Learn\ADO.Net\ADO.NET\Learn 2\hw2\hw2\obj\Debug\hw2.csproj.AssemblyReference.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 2\hw2\hw2\obj\Debug\hw2.csproj.CoreCompileInputs.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 2\hw2\hw2\obj\Debug\hw2.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 2\hw2\hw2\obj\Debug\hw2.pdb
