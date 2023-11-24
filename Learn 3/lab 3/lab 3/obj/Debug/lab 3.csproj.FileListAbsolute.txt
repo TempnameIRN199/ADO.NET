@@ -1,0 +1,7 @@
+E:\Project VS\C#\ADO.NET\lab 3\lab 3\bin\Debug\lab 3.exe.config
+E:\Project VS\C#\ADO.NET\lab 3\lab 3\bin\Debug\lab 3.exe
+E:\Project VS\C#\ADO.NET\lab 3\lab 3\bin\Debug\lab 3.pdb
+E:\Project VS\C#\ADO.NET\lab 3\lab 3\obj\Debug\lab 3.csproj.AssemblyReference.cache
+E:\Project VS\C#\ADO.NET\lab 3\lab 3\obj\Debug\lab 3.csproj.CoreCompileInputs.cache
+E:\Project VS\C#\ADO.NET\lab 3\lab 3\obj\Debug\lab 3.exe
+E:\Project VS\C#\ADO.NET\lab 3\lab 3\obj\Debug\lab 3.pdb
