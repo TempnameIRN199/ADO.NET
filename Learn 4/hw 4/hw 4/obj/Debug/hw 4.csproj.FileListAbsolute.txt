@@ -1,0 +1,10 @@
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\bin\Debug\hw 4.exe.config
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\bin\Debug\hw 4.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\bin\Debug\hw 4.pdb
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\obj\Debug\hw 4.csproj.AssemblyReference.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\obj\Debug\hw_4.Form1.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\obj\Debug\hw_4.Properties.Resources.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\obj\Debug\hw 4.csproj.GenerateResource.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\obj\Debug\hw 4.csproj.CoreCompileInputs.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\obj\Debug\hw 4.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 4\hw 4\hw 4\obj\Debug\hw 4.pdb
