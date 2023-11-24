@@ -1,0 +1,10 @@
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\bin\Debug\hw 3.exe.config
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\bin\Debug\hw 3.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\bin\Debug\hw 3.pdb
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\obj\Debug\hw 3.csproj.AssemblyReference.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\obj\Debug\hw_3.Form1.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\obj\Debug\hw_3.Properties.Resources.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\obj\Debug\hw 3.csproj.GenerateResource.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\obj\Debug\hw 3.csproj.CoreCompileInputs.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\obj\Debug\hw 3.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 3\hw 3\hw 3\obj\Debug\hw 3.pdb
