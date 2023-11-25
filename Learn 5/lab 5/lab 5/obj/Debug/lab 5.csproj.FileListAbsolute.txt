@@ -1,0 +1,10 @@
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\obj\Debug\lab 5.csproj.AssemblyReference.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\obj\Debug\lab_5.Form1.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\obj\Debug\lab_5.Properties.Resources.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\obj\Debug\lab 5.csproj.GenerateResource.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\obj\Debug\lab 5.csproj.CoreCompileInputs.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\bin\Debug\lab 5.exe.config
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\bin\Debug\lab 5.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\bin\Debug\lab 5.pdb
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\obj\Debug\lab 5.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 5\lab 5\lab 5\obj\Debug\lab 5.pdb
