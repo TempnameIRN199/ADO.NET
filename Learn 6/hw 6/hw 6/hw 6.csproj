@@ -65,7 +65,6 @@
     <Compile Include="EditUser.xaml.cs">
       <DependentUpon>EditUser.xaml</DependentUpon>
     </Compile>
-    <Compile Include="kuma.cs" />
     <Compile Include="Users.cs" />
     <Page Include="AddUser.xaml">
       <SubType>Designer</SubType>

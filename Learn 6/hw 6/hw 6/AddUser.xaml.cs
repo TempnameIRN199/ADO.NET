@@ -22,7 +22,7 @@ namespace hw_6
     {
 
         private string conn;
-        private kuma kum;
+        private Users user;
 
         public AddUser(string conn)
         {
@@ -30,7 +30,30 @@ namespace hw_6
             this.conn = conn;
         }
 
-        private string GetPasswordHash(string password)
+        public bool IsLoginUnique(string loign, int Id, string conn)
+        {
+            using (SqlConnection db = new SqlConnection(conn))
+            {
+                string sql = "select count(*) from Users where Login = @Login and Id != @UserId";
+                SqlCommand cmd = new SqlCommand(sql, db);
+                cmd.Parameters.AddWithValue("@Login", loign);
+                cmd.Parameters.AddWithValue("@UserId", Id);
+
+                try
+                {
+                    db.Open();
+                    int result = (int)cmd.ExecuteScalar();
+                    return result == 0;
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public string GetPasswordHash(string password)
         {
             return password.GetHashCode().ToString();
         }
@@ -41,7 +64,14 @@ namespace hw_6
 
             if (!string.IsNullOrWhiteSpace(login))
             {
-                bool isUnique = kum.IsLoginUnique(login, 0, conn);
+                user = new Users();
+                bool isUnique = IsLoginUnique(login, user.Id, conn);
+
+                if (!isUnique)
+                {
+                    MessageBox.Show("Такой логин уже существует");
+                    return;
+                }
 
                 using (SqlConnection db = new SqlConnection(conn))
                 {

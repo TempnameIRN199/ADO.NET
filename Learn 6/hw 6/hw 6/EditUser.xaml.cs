@@ -41,9 +41,32 @@ namespace hw_6
             chkIsAdmin.IsChecked = user.IsAdmin;
         }
 
-        private string GetPasswordHash(string password)
+        public string GetPasswordHash(string password)
         {
             return password.GetHashCode().ToString();
+        }
+
+        public bool IsLoginUnique(string loign, int Id, string conn)
+        {
+            using (SqlConnection db = new SqlConnection(conn))
+            {
+                string sql = "select count(*) from Users where Login = @Login and Id != @UserId";
+                SqlCommand cmd = new SqlCommand(sql, db);
+                cmd.Parameters.AddWithValue("@Login", loign);
+                cmd.Parameters.AddWithValue("@UserId", Id);
+
+                try
+                {
+                    db.Open();
+                    int result = (int)cmd.ExecuteScalar();
+                    return result == 0;
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
         }
 
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
@@ -54,15 +77,23 @@ namespace hw_6
             user.Phone = txtPhone.Text;
             user.IsAdmin = (bool)chkIsAdmin.IsChecked;
 
-            user.PasswordHash = GetPasswordHash(user.PasswordHash);
+            try
+            {
+                user.PasswordHash = GetPasswordHash(user.PasswordHash);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
 
-            using (SqlConnection db = new SqlConnection(conn))
+            /*using (SqlConnection db = new SqlConnection(conn))
             {
                 string sql = "select count(*) from Users where Login = @Login and Id != @UserId";
                 SqlCommand cmd = new SqlCommand(sql, db);
                 cmd.Parameters.AddWithValue("@Login", user.Login);
                 cmd.Parameters.AddWithValue("@UserId", user.Id);
-
+            
                 try
                 {
                     db.Open();
@@ -78,6 +109,13 @@ namespace hw_6
                     MessageBox.Show(ex.Message);
                     return;
                 }
+            }*/
+
+            bool isUnique = IsLoginUnique(user.Login, user.Id, conn);
+            if (!isUnique)
+            {
+                MessageBox.Show("Такой логин уже существует");
+                return;
             }
 
             using (SqlConnection db = new SqlConnection(conn))

@@ -65,7 +65,6 @@ namespace hw_6
             if (listBoxUsers.SelectedItems != null)
             {
                 Users selectedUser = (Users)listBoxUsers.SelectedItem;
-                // open window EditUser
                 EditUser editUser = new EditUser(conn, selectedUser);
                 editUser.ShowDialog();
                 LoadUser();
@@ -81,26 +80,19 @@ namespace hw_6
 
         private void ButtonDeleteUser_Click(object sender, RoutedEventArgs e)
         {
-
+            DeleteUser deleteUser = new DeleteUser(conn);
+            deleteUser.ShowDialog();
+            LoadUser();
         }
-
-        
-
-        private void listBoxUsers_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        
         
         private void CheckBoxAdmin_Checked(object sender, RoutedEventArgs e)
         {
-
+            listBoxUsers.ItemsSource = listBoxUsers.Items.Cast<Users>().Where(u => u.IsAdmin).ToList();
         }
-        
+
         private void CheckBoxAdmin_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            listBoxUsers.ItemsSource = user;
         }
     }
 }

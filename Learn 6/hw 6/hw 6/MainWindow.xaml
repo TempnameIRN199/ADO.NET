@@ -15,7 +15,7 @@
         <StackPanel Orientation="Horizontal" Margin="5">
             <Button x:Name="btnAddUser" Content="Add User" Width="100" Click="ButtonAddUser_Click"/>
             <Button x:Name="btnDeleteUser" Content="Delete User" Width="100" Click="ButtonDeleteUser_Click" Margin="5,0,0,0"/>
-            <CheckBox x:Name="chkAdminFilter" Content="Show Admins" Checked="CheckBoxAdmin_Checked" Unchecked="CheckBoxAdmin_Unchecked" Margin="5,5,0,0"/>
+            <CheckBox x:Name="chkAdminFilter" Content="Show Admins" Checked="CheckBoxAdmin_Checked" Unchecked="CheckBoxAdmin_Unchecked" Margin="5,5,0,0" IsChecked="False"/>
         </StackPanel>
 
         <ListBox x:Name="listBoxUsers" Grid.Row="1" Margin="5" 

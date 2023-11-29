@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hw_6"
         mc:Ignorable="d"
-        Title="DeleteUser" Height="450" Width="800">
+        Title="DeleteUser" Height="450" Width="600">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ListBox x:Name="listBoxUsers" Grid.Row="1" Margin="5" 
+         DisplayMemberPath="Login" SelectionMode="Single" 
+         MouseDoubleClick="ListBoxUsers_MouseDoubleClick">
+        </ListBox>
+
+        <Label Content="Удаление происходит после двойного нажатия на юзера" Margin="5" Grid.Row="0"/>
+
     </Grid>
 </Window>
