@@ -1,0 +1,21 @@
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\hw 6.csproj.AssemblyReference.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\MainWindow.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\App.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\hw 6_MarkupCompile.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\hw 6_MarkupCompile.lref
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\bin\Debug\hw 6.exe.config
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\bin\Debug\hw 6.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\bin\Debug\hw 6.pdb
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\MainWindow.baml
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\hw 6.g.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\hw_6.Properties.Resources.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\hw 6.csproj.GenerateResource.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\hw 6.csproj.CoreCompileInputs.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\hw 6.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\hw 6.pdb
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\AddUser.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\DeleteUser.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\AddUser.baml
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\DeleteUser.baml
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\EditUser.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 6\hw 6\hw 6\obj\Debug\EditUser.baml
