@@ -12,7 +12,5 @@
             <Button Content="Корзина" Click="ShowCart_Click"/>
             <Button Content="Оформити заказ" Click="ShowPurchaseWindow_Click"/>
         </StackPanel>
-
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Visible" Margin="0,50,0,0"/>
     </Grid>
 </Window>
