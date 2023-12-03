@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,8 @@ namespace hw_7
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string conn = ConfigurationManager.ConnectionStrings["kuma"].ConnectionString;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,7 +35,8 @@ namespace hw_7
 
         private void ShowProduct_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowProduct productWindow = new WindowProduct();
+            productWindow.Show();
         }
 
         private void ShowPurchaseWindow_Click(object sender, RoutedEventArgs e)

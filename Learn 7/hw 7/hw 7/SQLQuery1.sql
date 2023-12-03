@@ -1,3 +1,4 @@
+create database Shop
 use Shop
 drop table Product
 drop table Sellers

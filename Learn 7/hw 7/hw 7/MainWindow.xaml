@@ -8,9 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-            <Button Content="Товар" Click="ShowProduct_Click"/>
-            <Button Content="Корзина" Click="ShowCart_Click"/>
-            <Button Content="Оформити заказ" Click="ShowPurchaseWindow_Click"/>
+            <Button Content="Товар" Click="ShowProduct_Click" Margin="5"/>
+            <Button Content="Корзина" Click="ShowCart_Click" Margin="5"/>
+            <Button Content="Оформити заказ" Click="ShowPurchaseWindow_Click" Margin="5"/>
         </StackPanel>
     </Grid>
 </Window>

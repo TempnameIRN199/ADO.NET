@@ -32,7 +32,7 @@ namespace hw_6
             LoadUser();
         }
 
-        private void LoadUser()
+        private void LoadUser() 
         {
             user = new List<Users>();
 
