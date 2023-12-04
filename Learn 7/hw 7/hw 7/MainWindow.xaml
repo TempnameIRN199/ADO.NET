@@ -5,12 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hw_7"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="200" Width="300">
     <Grid>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-            <Button Content="Товар" Click="ShowProduct_Click" Margin="5"/>
-            <Button Content="Корзина" Click="ShowCart_Click" Margin="5"/>
-            <Button Content="Оформити заказ" Click="ShowPurchaseWindow_Click" Margin="5"/>
-        </StackPanel>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Content="Товар" Click="ShowProduct_Click" Margin="5"/>
+        <Button Grid.Row="1" Content="Оформити заказ" Click="ShowPurchaseWindow_Click" Margin="5"/>
+        <Button Grid.Row="2" Content="Корзина" Click="ShowCart_Click" Margin="5"/>
+
     </Grid>
 </Window>

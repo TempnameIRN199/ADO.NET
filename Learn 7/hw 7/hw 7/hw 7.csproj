@@ -57,12 +57,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Buyers.cs" />
+    <Compile Include="EditProduct.xaml.cs">
+      <DependentUpon>EditProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs" />
+    <Compile Include="SaleProducts.cs" />
+    <Compile Include="Sales.cs" />
+    <Compile Include="Sellers.cs" />
     <Compile Include="WindowAddProduct.xaml.cs">
       <DependentUpon>WindowAddProduct.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowProduct.xaml.cs">
       <DependentUpon>WindowProduct.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowPurshare.xaml.cs">
+      <DependentUpon>WindowPurshare.xaml</DependentUpon>
+    </Compile>
+    <Page Include="EditProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -80,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowPurshare.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

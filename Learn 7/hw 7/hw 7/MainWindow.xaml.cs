@@ -22,6 +22,7 @@ namespace hw_7
     public partial class MainWindow : Window
     {
         private string conn = ConfigurationManager.ConnectionStrings["kuma"].ConnectionString;
+        private List<Products> products;
 
         public MainWindow()
         {
@@ -35,13 +36,14 @@ namespace hw_7
 
         private void ShowProduct_Click(object sender, RoutedEventArgs e)
         {
-            WindowProduct productWindow = new WindowProduct();
+            WindowProduct productWindow = new WindowProduct(conn);
             productWindow.Show();
         }
 
         private void ShowPurchaseWindow_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowPurshare windowPurshare = new WindowPurshare(conn);
+            windowPurshare.Show();
         }
     }
 }

@@ -1,6 +1,7 @@
 create database Shop
 use Shop
-drop table Product
+use kuma
+drop table Products
 drop table Sellers
 drop table Buyer
 drop table Sales
@@ -31,6 +32,12 @@ create table Sales (
 Id int not null identity primary key,
 BuyerId int not null foreign key references Buyers(Id),
 SellerId int not null foreign key references Sellers(Id),
-ProductId int not null foreign key references Products(Id),
 SaleDate date not null
+)
+create table SaleProducts (
+Id int not null identity primary key,
+SaleId int not null foreign key references Sales(Id),
+ProductId int not null foreign key references Products(Id),
+Quantity int not null check(Quantity > 0),
+Price money not null
 )

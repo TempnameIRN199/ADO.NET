@@ -12,17 +12,22 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
-        <ListView Name="ProductListView" Margin="10" Grid.Row="0">
+        <ListView Name="ProductListView" Margin="10" Grid.Row="0" MouseDoubleClick="EditProduct_DoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Назва" Width="100" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Модель" Width="100" DisplayMemberBinding="{Binding Model}"/>
                     <GridViewColumn Header="Ціна" Width="100" DisplayMemberBinding="{Binding Price}"/>
                     <GridViewColumn Header="Кількість" Width="100" DisplayMemberBinding="{Binding Count}"/>
                 </GridView>
             </ListView.View>
         </ListView>
 
-        <Button Grid.Row="1"  Name="AddButton" Content="Додати товар" Width="100" Height="30" Margin="10, 0, 0, 10" Click="AddButton_Click"/>
-
-    </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Name="AddButton" Content="Додати товар" Width="100" Height="30" Margin="10, 0, 0, 10" Click="AddButton_Click"/>
+            <Button Name="DeleteButton" Content="Видалити товар" Width="100" Height="30" Margin="10, 0, 0, 10" Click="DeleteButton_Click"/>
+            <Button Name="UpdateButton" Content="Оновити таблицю" Width="110" Height="30" Margin="10, 0, 0, 10" Click="UpdateButton_Click"/>
+        </StackPanel>
+        
+        </Grid>
 </Window>

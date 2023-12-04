@@ -22,51 +22,80 @@ namespace hw_7
     public partial class WindowProduct : Window
     {
         private string conn;
+        private Products product;
 
-        public WindowProduct()
+        public WindowProduct(string conn)
         {
             InitializeComponent();
             this.conn = conn;
+            LoadWindow();
         }
 
-        private void LoadWindow(object sender, RoutedEventArgs e)
+        private void LoadWindow()
         {
             string sql = "SELECT * FROM Products";
-            // вывести из таблицы Products все записи в ListView
             using (SqlConnection db = new SqlConnection(conn))
             {
                 SqlCommand cmd = new SqlCommand(sql, db);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dT = new DataTable();
-
-                try
-                {
-                    db.Open();
-                    adapter.Fill(dT);
-                    ProductListView.Items.Clear();
-                    foreach (DataRow row in dT.Rows)
-                    {
-
-                    }
-
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                adapter.Fill(dT);
+                ProductListView.ItemsSource = dT.DefaultView;
             }
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            WindowAddProduct windowAddProduct = new WindowAddProduct();
+            WindowAddProduct windowAddProduct = new WindowAddProduct(conn);
             windowAddProduct.Show();
+            LoadWindow();
         }
 
-        private void ProductListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
+            if (ProductListView.SelectedItems != null)
+            {
+                if (ProductListView.SelectedItems.Count == 0)
+                {
+                    MessageBox.Show("Выберите товар для удаления");
+                    return;
+                }
+                else
+                {
+                    DataRowView row = (DataRowView)ProductListView.SelectedItems[0];
+                    string sql = "delete from Products where Id = @Id";
+                    using (SqlConnection db = new SqlConnection(conn))
+                    {
+                        SqlCommand cmd = new SqlCommand(sql, db);
+                        cmd.Parameters.AddWithValue("@Id", Convert.ToInt32(row["Id"]));
+                        db.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                    LoadWindow();
+                }
+            }
+        }
 
+        private void EditProduct_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (ProductListView.SelectedItems != null)
+            {
+                DataRowView row = (DataRowView)ProductListView.SelectedItems[0];
+                Products products = new Products();
+                products.Id = Convert.ToInt32(row["Id"]);
+                products.Name = row["Name"].ToString();
+                products.Model = row["Model"].ToString();
+                products.Price = Convert.ToDecimal(row["Price"]);
+                products.Count = Convert.ToInt32(row["Count"]);
+                EditProduct editProduct = new EditProduct(conn, products);
+                editProduct.Show();
+            }
+        }
+
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            ProductListView.ItemsSource = null;
+            LoadWindow();
         }
     }
 }

@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hw_7"
         mc:Ignorable="d"
-        Title="AddUser" Height="400" Width="300">
+        ResizeMode="NoResize"
+        Title="AddUser" Height="300" Width="300">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="46"/>
@@ -13,25 +14,22 @@
             <RowDefinition Height="46"/>
             <RowDefinition Height="46"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="46"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Login: " Grid.Row="0" Margin="10" />
-        <TextBox x:Name="txtLogin" Grid.Row="0" Margin="10, 10, -40, 10" Width="200" />
+        <Label Content="Name: " Grid.Row="0" Margin="10" />
+        <TextBox x:Name="txtName" Grid.Row="0" Margin="10, 10, -40, 10" Width="200" />
 
-        <Label Content="Password: " Grid.Row="1" Margin="10" />
-        <TextBox x:Name="txtPassword" Grid.Row="1" Margin="10, 10, -40, 10" Width="200" />
+        <Label Content="Model: " Grid.Row="1" Margin="10" />
+        <TextBox x:Name="txtModel" Grid.Row="1" Margin="10, 10, -40, 10" Width="200" />
 
-        <Label Content="Address: " Grid.Row="2" Margin="10" />
-        <TextBox x:Name="txtAddress" Grid.Row="2" Margin="10, 10, -40, 10" Width="200" />
+        <Label Content="Price: " Grid.Row="2" Margin="10" />
+        <TextBox x:Name="txtPrice" Grid.Row="2" Margin="10, 10, -40, 10" Width="200" />
 
-        <Label Content="Phone: " Grid.Row="3" Margin="10" />
-        <TextBox x:Name="txtPhone" Grid.Row="3" Margin="10, 10, -40, 10" Width="200" />
-
-        <CheckBox x:Name="chkIsAdmin" Content="Is Admin" Grid.Row="4" Margin="10" />
+        <Label Content="Count: " Grid.Row="3" Margin="10" />
+        <TextBox x:Name="txtCount" Grid.Row="3" Margin="10, 10, -40, 10" Width="200" />
 
         <Button Content="Save" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5"
-            Margin="0,10,0,10"/>
+            Margin="0,10,0,10" Click="btn_Save_Click"/>
 
     </Grid>
 </Window>
