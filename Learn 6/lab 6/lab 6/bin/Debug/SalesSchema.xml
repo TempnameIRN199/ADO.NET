@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ShopDB" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ShopDB" msdata:IsDataSet="true" msdata:MainDataTable="Sales" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Sales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SaleID" type="xs:int" />
+              <xs:element name="CustomerID" type="xs:int" minOccurs="0" />
+              <xs:element name="SellerID" type="xs:int" minOccurs="0" />
+              <xs:element name="Amount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Sales" />
+      <xs:field xpath="SaleID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
