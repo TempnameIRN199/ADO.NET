@@ -78,11 +78,11 @@ namespace hw_7
 
         private void EditProduct_DoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (ProductListView.SelectedItems != null)
+            if (ProductListView.SelectedItems != null) // проверяем, что выделена хотя бы одна строка
             {
-                DataRowView row = (DataRowView)ProductListView.SelectedItems[0];
-                Products products = new Products();
-                products.Id = Convert.ToInt32(row["Id"]);
+                DataRowView row = (DataRowView)ProductListView.SelectedItems[0]; // получаем выделенную строку
+                Products products = new Products(); // создаем экземпляр класса Products
+                products.Id = Convert.ToInt32(row["Id"]); // присваиваем значения свойствам экземпляра класса
                 products.Name = row["Name"].ToString();
                 products.Model = row["Model"].ToString();
                 products.Price = Convert.ToDecimal(row["Price"]);

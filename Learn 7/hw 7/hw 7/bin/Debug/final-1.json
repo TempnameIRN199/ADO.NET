@@ -1,0 +1,21 @@
+{
+  "RowError": "",
+  "RowState": 2,
+  "Table": [
+    {
+      "Id": 1,
+      "SaleId": 1,
+      "ProductId": 1,
+      "Quantity": 1,
+      "Price": 48000.0000
+    }
+  ],
+  "ItemArray": [
+    1,
+    1,
+    1,
+    1,
+    48000.0000
+  ],
+  "HasErrors": false
+}

@@ -48,3 +48,9 @@ E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowShow.g.cs
 E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowShow.baml
 E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowChoose.g.cs
 E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowChoose.baml
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\bin\Debug\Newtonsoft.Json.Bson.dll
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\bin\Debug\Newtonsoft.Json.dll
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\bin\Debug\Newtonsoft.Json.xml
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\bin\Debug\Newtonsoft.Json.Bson.pdb
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\bin\Debug\Newtonsoft.Json.Bson.xml
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\hw 7.csproj.CopyComplete
