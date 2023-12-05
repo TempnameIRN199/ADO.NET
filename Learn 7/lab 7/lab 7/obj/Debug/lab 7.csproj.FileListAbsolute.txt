@@ -1,0 +1,15 @@
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\bin\Debug\lab 7.exe.config
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\bin\Debug\lab 7.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\bin\Debug\lab 7.pdb
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\lab 7.csproj.AssemblyReference.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\MainWindow.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\App.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\lab 7_MarkupCompile.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\lab 7_MarkupCompile.lref
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\MainWindow.baml
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\lab 7.g.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\lab_7.Properties.Resources.resources
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\lab 7.csproj.GenerateResource.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\lab 7.csproj.CoreCompileInputs.cache
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\lab 7.exe
+E:\Learn\ADO.Net\ADO.NET\Learn 7\lab 7\lab 7\obj\Debug\lab 7.pdb
