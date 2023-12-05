@@ -45,5 +45,23 @@ namespace hw_7
             WindowPurshare windowPurshare = new WindowPurshare(conn);
             windowPurshare.Show();
         }
+
+        private void AddSeller_Click(object sender, RoutedEventArgs e)
+        {
+            WindowSellers windowSellers = new WindowSellers(conn);
+            windowSellers.Show();
+        }
+
+        private void AddBuyer_Click(object sender, RoutedEventArgs e)
+        {
+            WindowBuyer windowBuyer = new WindowBuyer(conn);
+            windowBuyer.Show();
+        }
+
+        private void ShowTable_Click(object sender, RoutedEventArgs e)
+        {
+            WindowShow windowShow = new WindowShow(conn);
+            windowShow.Show();
+        }
     }
 }

@@ -28,6 +28,5 @@
             <Button Name="DeleteButton" Content="Видалити товар" Width="100" Height="30" Margin="10, 0, 0, 10" Click="DeleteButton_Click"/>
             <Button Name="UpdateButton" Content="Оновити таблицю" Width="110" Height="30" Margin="10, 0, 0, 10" Click="UpdateButton_Click"/>
         </StackPanel>
-        
-        </Grid>
+    </Grid>
 </Window>

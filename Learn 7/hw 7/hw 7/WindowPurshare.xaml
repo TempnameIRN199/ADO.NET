@@ -50,18 +50,18 @@
 
                 <Label Grid.Row="0" Content="Кошик" HorizontalAlignment="Center"/>
 
-                <ListView Name="PurshareListView" Margin="10" Grid.Row="1" MouseDoubleClick="returnProduct_DoubleClick">
+                <ListView Name="PurshareListView" Margin="10" Grid.Row="1">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Назва" Width="100" DisplayMemberBinding="{Binding Name}"/>
-                            <GridViewColumn Header="Модель" Width="100" DisplayMemberBinding="{Binding Model}"/>
-                            <GridViewColumn Header="Ціна" Width="100" DisplayMemberBinding="{Binding Price}"/>
-                            <GridViewColumn Header="Кількість" Width="100" DisplayMemberBinding="{Binding Count}"/>
                         </GridView>
                     </ListView.View>
                 </ListView>
             </Grid>
         </Grid>
-        <Button Grid.Row="1" Name="AddButton" Content="Оформити покупку" MaxWidth="150" Width="150" MaxHeight="30" Height="30" Margin="10, 0, 0, 10"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Grid.Row="1" Name="AddButton" Content="Оформити покупку" MaxWidth="150" Width="150" MaxHeight="30" Height="30" Margin="10, 0, 0, 10"/>
+            <Button Grid.Row="1" Name="UpdateButton" Content="Update" MaxWidth="150" Width="150" MaxHeight="30" Height="30" Margin="10, 0, 0, 10" Click="UpdateButton_Click"/>
+        </StackPanel>
+
     </Grid>
 </Window>

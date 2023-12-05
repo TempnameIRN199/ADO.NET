@@ -68,11 +68,23 @@
     <Compile Include="WindowAddProduct.xaml.cs">
       <DependentUpon>WindowAddProduct.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowBuyer.xaml.cs">
+      <DependentUpon>WindowBuyer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowChoose.xaml.cs">
+      <DependentUpon>WindowChoose.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowProduct.xaml.cs">
       <DependentUpon>WindowProduct.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowPurshare.xaml.cs">
       <DependentUpon>WindowPurshare.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowSellers.xaml.cs">
+      <DependentUpon>WindowSellers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowShow.xaml.cs">
+      <DependentUpon>WindowShow.xaml</DependentUpon>
     </Compile>
     <Page Include="EditProduct.xaml">
       <SubType>Designer</SubType>
@@ -94,11 +106,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowBuyer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowChoose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowPurshare.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowSellers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowShow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

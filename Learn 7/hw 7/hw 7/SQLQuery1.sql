@@ -41,3 +41,24 @@ ProductId int not null foreign key references Products(Id),
 Quantity int not null check(Quantity > 0),
 Price money not null
 )
+
+select p.Name, sp.Quantity from SaleProducts as sp
+join Products as p on sp.ProductId = p.Id
+where p.Id = @Id
+
+
+
+
+DECLARE @BuyerId INT;
+
+SELECT @BuyerId = Id
+FROM Buyers
+WHERE FName = 'ИмяПокупателя';
+
+IF @BuyerId IS NULL
+BEGIN
+    INSERT INTO Buyers (FName, Email, Phone)
+    VALUES ('ИмяПокупателя', 'email_покупателя', 'телефон_покупателя');
+
+    SET @BuyerId = SCOPE_IDENTITY();
+END;

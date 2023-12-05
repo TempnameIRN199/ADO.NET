@@ -40,3 +40,11 @@ E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\EditProduct.g.cs
 E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\EditProduct.baml
 E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowPurshare.g.cs
 E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowPurshare.baml
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowBuyer.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowSellers.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowBuyer.baml
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowSellers.baml
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowShow.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowShow.baml
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowChoose.g.cs
+E:\Learn\ADO.Net\ADO.NET\Learn 7\hw 7\hw 7\obj\Debug\WindowChoose.baml
