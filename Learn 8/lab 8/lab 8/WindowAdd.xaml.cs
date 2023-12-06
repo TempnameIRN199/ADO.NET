@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.Entity;
 using System.Data;
+using System.Runtime.Remoting.Contexts;
 
 namespace lab_8
 {
@@ -23,7 +24,6 @@ namespace lab_8
     /// </summary>
     public partial class WindowAdd : Window
     {
-
         public WindowAdd(string title, Type type)
         {
             InitializeComponent();
@@ -32,18 +32,6 @@ namespace lab_8
             {
                 Department department = new Department();
                 this.DataContext = department;
-
-                if (this.Title == "DepartmentEdit")
-                {
-                    using (ITStepEntities db = new ITStepEntities())
-                    {
-                        txtName.Text = department1.Name;
-                    }
-                }
-                if (this.Title == "DepartmentAdd")
-                {
-                    txtName.Text = "";
-                }
             }
             else if (type == typeof(Form))
             {
@@ -65,29 +53,14 @@ namespace lab_8
                             Department department = new Department();
                             department.Name = txtName.Text;
                             db.Departments.Add(department);
-                            MessageBox.Show("Отдел добавлен");
+                            MessageBox.Show("Відділ доданий");
                         }
                         else
                         {
-                            MessageBox.Show("Введите название отдела");
+                            MessageBox.Show("Введіть назву відділу");
                             return;
                         }
                     }
-                    else if (this.Title == "DepartmentEdit")
-                    {
-                        Department department = db.Departments.Find(((Department)this.DataContext).Id);
-                        if (txtName.Text != "" && txtName.Text != null)
-                        {
-                            department.Name = txtName.Text;
-                            MessageBox.Show("Отдел изменен");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Введите название отдела");
-                            return;
-                        }
-                    }
-                    
                 }
                 else if (this.DataContext is Form)
                 {
@@ -96,13 +69,18 @@ namespace lab_8
                         Form form = new Form();
                         form.Name = txtName.Text;
                         db.Forms.Add(form);
-                        MessageBox.Show("Форма обучения добавлена");
+                        MessageBox.Show("Форма навчання додана");
                     }
                     else
                     {
-                        MessageBox.Show("Введите название формы обучения");
+                        MessageBox.Show("Введіть назву форми навчання");
                         return;
                     }
+                }
+                else
+                {
+                    MessageBox.Show("От що ти хочеш цим показати");
+                    return;
                 }
                 db.SaveChanges();
             }

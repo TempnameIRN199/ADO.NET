@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab_8"
         mc:Ignorable="d"
-        Title="WindowEdit" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="WindowEdit" Height="150" Width="350">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="46"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Name: " Grid.Row="0" Margin="10" />
+        <TextBox x:Name="txtName" Grid.Row="0" Margin="10, 10, -40, 10" Width="200" />
+
+        <Button Content="Save" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5"
+        Margin="0,10,0,10" Click="btn_Save_Click"/>
+
     </Grid>
 </Window>

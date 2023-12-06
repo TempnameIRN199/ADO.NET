@@ -112,11 +112,11 @@ namespace lab_8
                         db.Groups.Add(group);
                         group.FormId = Convert.ToInt32(textBox1.Text);
                         db.Groups.Add(group);
-                        MessageBox.Show("Отдел добавлен");
+                        MessageBox.Show("Форма додана");
                     }
                     else
                     {
-                        MessageBox.Show("Введите название отдела");
+                        MessageBox.Show("Введіть дані про форму навчання");
                         return;
                     }
                 }
