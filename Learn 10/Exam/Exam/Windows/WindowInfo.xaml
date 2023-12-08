@@ -1,0 +1,91 @@
+﻿<Window x:Class="Exam.Windows.WindowInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam.Windows"
+        mc:Ignorable="d"
+        
+        Title="WindowInfo" Height="450" Width="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <TabControl Grid.Row="0" Grid.Column="0">
+                <TabItem Name="InfoPage" Header="Info">
+                    <ListView x:Name="InfoView" ItemsSource="{Binding Info}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Country" Width="Auto" DisplayMemberBinding="{Binding Country}"/>
+                                <GridViewColumn Header="Olympics" Width="Auto" DisplayMemberBinding="{Binding Olympic}"/>
+                                <GridViewColumn Header="Gold Medals" Width="Auto" DisplayMemberBinding="{Binding GoldCount}"/>
+                                <GridViewColumn Header="Silver Medals" Width="Auto" DisplayMemberBinding="{Binding SilverCount}"/>
+                                <GridViewColumn Header="Bronze Medals" Width="Auto" DisplayMemberBinding="{Binding BronzeCount}"/>
+                                <GridViewColumn Header="Total Count" Width="Auto" DisplayMemberBinding="{Binding TotalCount}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+                <TabItem Name="InfoPage2" Header="Info2">
+                    <ListView x:Name="Info2View" ItemsSource="{Binding info2}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Member Name" Width="Auto" DisplayMemberBinding="{Binding MemberName}"/>
+                                <GridViewColumn Header="Sports" Width="Auto" DisplayMemberBinding="{Binding Sports}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+                <TabItem Name="InfoPage3" Header="Info3">
+                    <ListView x:Name="Info3View" ItemsSource="{Binding info3}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Country" Width="Auto" DisplayMemberBinding="{Binding Country}"/>
+                                <GridViewColumn Header="Gold Medal" Width="Auto" DisplayMemberBinding="{Binding GoldMedal}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+                <TabItem Name="InfoPage4" Header="Info4">
+                    <ListView x:Name="Info4View" ItemsSource="{Binding info4}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Name" Width="Auto" DisplayMemberBinding="{Binding Name}"/>
+                                <GridViewColumn Header="Gold Medal" Width="Auto" DisplayMemberBinding="{Binding GoldMedal}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+                <TabItem Name="InfoPage6" Header="Info6">
+                    <ListView x:Name="Info6View" ItemsSource="{Binding info6}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Name" Width="Auto" DisplayMemberBinding="{Binding Name}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+            </TabControl>
+        </Grid>
+
+        <ComboBox x:Name="OlympicsComboBox" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150"
+                  Height="30" Margin="10" SelectionChanged="OlympicsComboBox_SelectionChanged">
+            
+        </ComboBox>
+         
+        <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Right">
+            <Button Content="1" Margin="5" Width="100" Click="Button_Click"/>
+            <Button Content="2" Click="Button_Click2_Click" Margin="5" Width="100"/>
+            <Button Content="3" Click="Button_Click3_Click" Margin="5" Width="100"/>
+            <Button Content="4" Click="Button_Click4_Click" Margin="5" Width="100"/>
+            <Button Content="5" Click="Button_Click5_Click" Margin="5" Width="100"/>
+            <Button Content="6" Click="Button_Click6_Click" Margin="5" Width="100"/>
+            <Button Content="7" Click="Button_Click7_Click" Margin="5" Width="100"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

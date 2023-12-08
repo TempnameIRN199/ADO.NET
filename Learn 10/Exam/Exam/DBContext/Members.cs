@@ -12,8 +12,8 @@ namespace Exam.DBContext
         public string FullName { get; set; }
         public string Country { get; set; }
         public DateTime DOB { get; set; }
-        public int SportsId { get; set; }
 
+        public int SportId { get; set; }
         public virtual Sports Sports { get; set; }
 
         public virtual ICollection<Results> Results { get; set; }

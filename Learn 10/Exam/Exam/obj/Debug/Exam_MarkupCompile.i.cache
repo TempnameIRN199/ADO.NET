@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\Learn\ADO.Net\ADO.NET\Learn 10\Exam\Exam\App.xaml
-1219584333
+41616929596
 
-13965279617
+17-2146685296
 16192778825
-MainWindow.xaml;
+AddWindow\WindowAdd.xaml;EditWindow\WindowEdit.xaml;MainWindow.xaml;Windows\WindowInfo.xaml;
 
-False
+True
 

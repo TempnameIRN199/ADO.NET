@@ -10,10 +10,12 @@ namespace Exam.DBContext
     {
         public int Id { get; set; }
         public EnuMedal Medal { get; set; }
-        public int MembersId { get; set; }
-        public int SportsId { get; set; }
-
+        
+        public int MemberId { get; set; }
         public virtual Members Members { get; set; }
+
+        public int SportId { get; set; }
         public virtual Sports Sports { get; set; }
+
     }
 }

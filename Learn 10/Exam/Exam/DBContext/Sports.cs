@@ -11,8 +11,8 @@ namespace Exam.DBContext
         public int Id { get; set; }
         public string Name { get; set; }
         public int AmountMember { get; set; }
-        public int OlympicsId { get; set; }
 
+        public int OlympicId { get; set; }
         public virtual Olympics Olympics { get; set; }
 
         public virtual ICollection<Members> Members { get; set; }
