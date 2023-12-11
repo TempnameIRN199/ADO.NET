@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -43,17 +44,15 @@ namespace Exam
                 MembersListView.ItemsSource = null;
                 ResultsListView.ItemsSource = null;
 
-                var olympicsList = (from olympics in db.Olympics select olympics).ToList();
-                OlympicsListView.ItemsSource = olympicsList;
+                db.Olympics.Load();
+                db.Sports.Load();
+                db.Members.Load();
+                db.Results.Load();
 
-                var sportsList = (from sports in db.Sports select sports).ToList();
-                SportsListView.ItemsSource = sportsList;
-
-                var membersList = (from members in db.Members select members).ToList();
-                MembersListView.ItemsSource = membersList;
-
-                var resultsList = (from results in db.Results select results).ToList();
-                ResultsListView.ItemsSource = resultsList;
+                OlympicsListView.ItemsSource = db.Olympics.Local.ToBindingList();
+                SportsListView.ItemsSource = db.Sports.Local.ToBindingList();
+                MembersListView.ItemsSource = db.Members.Local.ToBindingList();
+                ResultsListView.ItemsSource = db.Results.Local.ToBindingList();
             }
         }
 
